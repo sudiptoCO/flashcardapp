@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Flash Card  </title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+
+        <style type="text/css">
+            header.masthead {
+                  padding-top: 15rem;
+                  padding-bottom: calc(15rem - 3rem);
+                  background: linear-gradient(to bottom, rgba(204, 237, 240, 0.8) 0%, rgba(151, 187, 172, 0.8) 100%), url("{{ url_for('static', filename='img/bg-masthead.jpg') }}");
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-attachment: scroll;
+                  background-size: cover;
+                    }
+
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <h1>Flash Card</h1>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('views.login') }}">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('views.register') }}">SignUp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">What are flashcards??</h1>
+                        <i><p class="text-white">Flashcards are small note cards used for testing and improving memory through practiced information retrieval. Flashcards are typically two-sided, with the prompt on one side and the information about the prompt on the other. This may include names, vocabulary, concepts, or procedures. </p></i>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Start learning by creating your own personalized Flash Decks, Or Browse through decks made public by our contributers</p>
+                        <a class="btn btn-primary btn-xl" href="{{ url_for('views.register') }}">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
